@@ -27,4 +27,7 @@ As explained in the attached notebook, after some Exploratory Data Analysis (EDA
 ## Model Building
 We built a Neural Network using TensorFlow and Keras libraries with an architecture of 35 --> 20 --> 10 --> 5 --> 1 layers in the neural network. The final neuron has a sigmoid activation which predicts the probability of a KOI to be a CANDIDATE exoplanet. The model is trained using the 'binary_crossentropy' loss function and the 'adam' optimizer.
 
-## Evaluatio
+## Evaluation
+For evaluating the performance of the model, we use several metrics including: Accuracy, Recall, Precision, F1 score. 
+After finetuning, the final neural network model is tested on an unseen data.
+**Accuracy** = 96%, **Recall** = 0.95, **Precision** = 0.97
