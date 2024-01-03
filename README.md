@@ -20,3 +20,11 @@ More information about the definitions can be found on: https://exoplanetarchive
 
 ## Target Variable
 The column 'koi_pdisposition' indicates whether Kepler Object of Interest (KOI) is a CANDIDATE or a FALSE POSITIVE.
+
+## Features
+As explained in the attached notebook, after some Exploratory Data Analysis (EDA) and handling of the null values, we are left with the following subset of the above columns that are used to train and predict whether the given KOI is classified as a CANDIDATE or a FALSE POSITIVE.
+
+## Model Building
+We built a Neural Network using TensorFlow and Keras libraries with an architecture of 35 --> 20 --> 10 --> 5 --> 1 layers in the neural network. The final neuron has a sigmoid activation which predicts the probability of a KOI to be a CANDIDATE exoplanet. The model is trained using the 'binary_crossentropy' loss function and the 'adam' optimizer.
+
+## Evaluatio
